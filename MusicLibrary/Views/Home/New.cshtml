@@ -10,10 +10,10 @@
       crossorigin="anonymous">
   </head>
   <body>
-    <h1>My Records</h1>
-    <ul>
-      <li>@Model.Title</li>
-    </ul>
-    <a href ="/titles/new">Add a new record title</a>
+    <form action="/titles" method="post">
+      <label for="title">Add a new record title</label>
+      <input id="title" name="title" type="text">
+      <button type="submit">Add</button>
+    </form>
   </body>
 </html>
