@@ -15,6 +15,11 @@ namespace MusicLibrary.Models
             Year = year;
         }
 
+        public string GetTitle()
+        {
+            return Title;
+        }
+
     }
 }
 

@@ -21,7 +21,7 @@ namespace MusicLibrary.Tests
         {
         string title = "title";
         Record newRecord = new (title, "artist", 1989);
-        string result = newRecord.Title();
+        string result = newRecord.Title;
         Assert.AreEqual(title, result);
         }
     }
