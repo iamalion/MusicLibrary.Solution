@@ -12,8 +12,13 @@
   <body>
     <h1>My Records</h1>
     <ul>
-      <li>@Model.Title</li>
+        @using MusicLibrary.Models 
+        @foreach (Record record in Model)
+        {
+           //do something 
+        }
+      <li></li>
     </ul>
-    <a href ="/titles/new">Add a new record title</a>
+    <a href ="/records/new">Add a new record</a>
   </body>
 </html>

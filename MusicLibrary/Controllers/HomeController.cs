@@ -8,20 +8,21 @@ namespace MusicLibrary.Controllers
         [Route("/")]
         public ActionResult Index()
         {
-            Record newRecord = new Record("Add new record");
-            return View(newRecord);
+            return View(Record.instances);
         }
 
-        [Route("/titles/new")]
+        [Route("/records/new")]
         public ActionResult New()
         {
             return View();
         }
 
-        [Route("/titles")]
-        public ActionResult Create(string title)
+
+        //view should have same type (list)
+        [Route("/records")]
+        public ActionResult Create(string title, string artist, int year)
         {
-            Record myRecord = new Record(title);
+            Record myRecord = new Record(title, artist, year);
             return View("Index", myRecord);
         }
     }
