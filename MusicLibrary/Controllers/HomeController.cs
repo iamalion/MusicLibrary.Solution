@@ -6,9 +6,10 @@ namespace MusicLibrary.Controllers
     public class HomeController : Controller
     {
         [Route("/")]
-        public ActionResult Index(string[] args)
+        public ActionResult Index()
         {
-            return View();
+            Record newRecord = new Record("Add new record");
+            return View(newRecord);
         }
     }
 }
