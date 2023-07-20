@@ -34,5 +34,15 @@ namespace MusicLibrary.Tests
         string result = newRecord.Artist;
         Assert.AreEqual(artist, result);
         }
+
+        [TestMethod]
+
+        public void GetYear_ReturnsSameYear_Year()
+        {
+        int year = 1989;
+        Record newRecord = new ("title", "artist", 1989);
+        int result = newRecord.Year;
+        Assert.AreEqual(year, result);
+        }
     }
 }

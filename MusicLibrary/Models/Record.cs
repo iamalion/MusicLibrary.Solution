@@ -25,6 +25,11 @@ namespace MusicLibrary.Models
             return Artist;
         }
 
+        public int GetYear()
+        {
+            return Year;
+        }
+
     }
 }
 
