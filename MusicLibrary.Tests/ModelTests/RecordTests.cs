@@ -24,5 +24,15 @@ namespace MusicLibrary.Tests
         string result = newRecord.Title;
         Assert.AreEqual(title, result);
         }
+
+        [TestMethod]
+
+        public void GetArtist_ReturnsSameArtist_String()
+        {
+        string artist = "artist";
+        Record newRecord = new ("title", artist, 1989);
+        string result = newRecord.Artist;
+        Assert.AreEqual(artist, result);
+        }
     }
 }

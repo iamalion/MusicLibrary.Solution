@@ -20,6 +20,11 @@ namespace MusicLibrary.Models
             return Title;
         }
 
+        public string GetArtist()
+        {
+            return Artist;
+        }
+
     }
 }
 
