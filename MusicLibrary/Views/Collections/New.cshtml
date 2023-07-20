@@ -10,10 +10,10 @@
       crossorigin="anonymous">
   </head>
   <body>
-    <h1>My Records</h1>
-    <p>What would you like to do?</p>
-    <a href ="/collections/new">Add a new collection</a>
-    <a href ="/collectionsg">See all collections</a>
-    @* <a href ="/records/new">Add a new record</a> *@
+    <form action="/collections" method="post">
+      <label for="collections">Add a new collection</label>
+      <input id="collections" name="collections" type="text">
+      <button type="submit">Add</button>
+    </form>
   </body>
 </html>
